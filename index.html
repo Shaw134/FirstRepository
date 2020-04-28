@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body style = "background-color: lightgreen">
+	<!-- Includes local javascript file -->
+	<script src="js/scripts.js"></script>
+  
+	<!-- Tabs list -->
+	<ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news" onclick="toggleContent('news')">News</a></li>
+		<li><a href="#cheats">Cheats</a></li>
+		<li><a href="#search">Search</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<!-- Main content divider -->
+	<div class="content">
+		<!-- Home divider -->
+		<div id="home"> 
+			<h1 class="rhysclass">In Progress</h1>
+			<button onclick="showImage()" type="button">Show/hide</button>
+			<div> 
+				<img id="rickandmorty" src="pic.jpg" hidden="true"></img>
+			</div>	  
+		</div>
+		<!-- News divider -->
+		<div id="news" hidden = true> 
+			News  
+		</div> 	  
+	</div>
+</body>
+</html>
